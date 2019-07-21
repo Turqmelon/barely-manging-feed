@@ -1,10 +1,12 @@
 const express = require('express');
 const RSSParser = require('rss-parser');
 const rateLimit = require('express-rate-limit');
+const cors = require('cors');
 
 const FEED_URL = 'https://anchor.fm/s/cd70238/podcast/rss';
 
 const app = express();
+app.use(cors());
 
 const parser = new RSSParser();
 
