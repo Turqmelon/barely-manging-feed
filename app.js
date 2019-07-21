@@ -27,6 +27,6 @@ app.get('/feed', feedRateLimit, async (req, res) => {
     }
 });
 
-app.set('port', 3000);
+app.set('port', 8080);
 
 app.listen(app.get('port'));
