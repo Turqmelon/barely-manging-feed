@@ -9,7 +9,7 @@ const app = express();
 const parser = new RSSParser();
 
 const feedRateLimit = rateLimit({
-    windowMs: 3*60*1000,
+    windowMs: 3*1000,
     max: 3,
     error: {
         message: 'Too many requests. Try again shortly.'
